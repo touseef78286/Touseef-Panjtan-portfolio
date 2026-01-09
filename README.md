@@ -29,7 +29,7 @@ A high-performance, sleek, and professional developer portfolio built to showcas
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/touseef78286/portfolio.git(not available)
+   git clone https://github.com/touseef78286/Touseef-Panjtan-portfolio.git(not available)
    ```
 
 2. **Install dependencies:**
