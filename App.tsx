@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ResumeModal from './components/Resume';
 import { ChevronUp } from 'lucide-react';
 
 const ScrollToTop: React.FC = () => {
@@ -46,6 +47,8 @@ const ScrollToTop: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   useEffect(() => {
     const reveal = () => {
       const reveals = document.querySelectorAll('.reveal');
@@ -60,15 +63,15 @@ const App: React.FC = () => {
     };
 
     window.addEventListener('scroll', reveal);
-    reveal(); // Initial check
+    reveal(); 
     return () => window.removeEventListener('scroll', reveal);
   }, []);
 
   return (
     <div className="bg-[#0a0a0a] min-h-screen selection:bg-orange-500/30">
-      <Navbar />
+      <Navbar onOpenResume={() => setIsResumeOpen(true)} />
       <main>
-        <Hero />
+        <Hero onOpenResume={() => setIsResumeOpen(true)} />
         <div className="reveal"><About /></div>
         <div className="reveal"><Education /></div>
         <div className="reveal"><Skills /></div>
@@ -78,6 +81,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <ScrollToTop />
+      <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
     </div>
   );
 };

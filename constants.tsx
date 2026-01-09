@@ -1,19 +1,8 @@
 
 import React from 'react';
 import { Project, Skill, EducationItem, Testimonial } from './types';
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Download, 
-  Code2, 
-  Layout, 
-  Database, 
-  Smartphone,
-  Server,
-  Terminal
-} from 'lucide-react';
+
+export const FULL_NAME = "Touseef Panjtan";
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/touseef78286",
@@ -21,80 +10,70 @@ export const SOCIAL_LINKS = {
   email: "mailto:touseefpanjtan52@gmail.com"
 };
 
-export const CV_URL = "#"; // Replace with actual CV link
+export const PROFILE_PIC_URL = "/zenithprofile.jpeg"; 
+
+export const RESUME_SUMMARY = "Software Engineering Student | Aspiring Software Engineer | Seeking Internship Opportunities | Web Developer | App Developer | AI & Web3D Developer | Creative Technologist. Dedicated to building high-impact digital solutions and immersive experiences at the intersection of AI and modern web technologies.";
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    name: "Modern E-Commerce Dashboard",
-    description: "A full-featured admin dashboard with real-time analytics, inventory management, and customer tracking using React and Tailwind.",
-    tech: ["React", "TypeScript", "Tailwind", "Recharts"],
+    name: "NeuroFlow: AI Content Engine",
+    description: "Architected a sophisticated content generation platform leveraging Gemini & OpenAI APIs. Features real-time streaming responses and contextual memory for long-form creative writing.",
+    tech: ["Next.js", "TypeScript", "AI APIs", "Tailwind"],
     githubUrl: "https://github.com/touseef78286",
-    imageUrl: "https://picsum.photos/seed/dash/800/500"
+    imageUrl: "https://picsum.photos/seed/ai-engine/800/500"
   },
   {
     id: 2,
-    name: "AI Content Generator",
-    description: "An interface for interacting with Large Language Models to generate blog posts, social media content, and code snippets.",
-    tech: ["Next.js", "OpenAI API", "Framer Motion"],
+    name: "Aether: Immersive 3D Workspace",
+    description: "An experimental Web3D productivity hub built with Three.js. Implements spatial UI components and physics-based interactions for a futuristic desktop experience.",
+    tech: ["Three.js", "React Three Fiber", "Framer Motion"],
     githubUrl: "https://github.com/touseef78286",
-    imageUrl: "https://picsum.photos/seed/ai/800/500"
+    imageUrl: "https://picsum.photos/seed/3d-world/800/500"
   },
   {
     id: 3,
-    name: "Task Management Suite",
-    description: "Collaborative project management tool with Kanban boards, file sharing, and team chat features.",
-    tech: ["React", "Firebase", "DragDropContext"],
+    name: "Visionary: Object Recognition Suite",
+    description: "A real-time computer vision application that detects and classifies objects with 92% accuracy using TensorFlow.js integrated into a React Native mobile shell.",
+    tech: ["TensorFlow.js", "React Native", "Python", "Flask"],
     githubUrl: "https://github.com/touseef78286",
-    imageUrl: "https://picsum.photos/seed/task/800/500"
+    imageUrl: "https://picsum.photos/seed/vision/800/500"
   },
   {
     id: 4,
-    name: "Weather Real-time App",
-    description: "Hyper-local weather forecasting application with interactive maps and historical data visualizations.",
-    tech: ["TypeScript", "OpenWeather API", "D3.js"],
+    name: "Nexus: Decentralized Auth System",
+    description: "A secure, scalable authentication microservice utilizing JWT and Web3 principles. Built with a focus on zero-trust architecture and seamless UX.",
+    tech: ["Node.js", "PostgreSQL", "Web3.js", "Docker"],
     githubUrl: "https://github.com/touseef78286",
-    imageUrl: "https://picsum.photos/seed/weather/800/500"
+    imageUrl: "https://picsum.photos/seed/auth/800/500"
   }
 ];
 
 export const TECH_DESCRIPTIONS: Record<string, string> = {
-  "React": "A JavaScript library for building user interfaces with components.",
-  "TypeScript": "A typed superset of JavaScript that scales.",
-  "Tailwind": "A utility-first CSS framework for rapid UI development.",
-  "Recharts": "A composable charting library built on React components.",
-  "Next.js": "The React framework for the web, optimized for performance and SEO.",
-  "OpenAI API": "Integration with advanced AI models for NLP tasks.",
-  "Framer Motion": "A production-ready motion library for React.",
-  "Firebase": "Platform for building mobile and web applications without a backend.",
-  "DragDropContext": "Utility for implementing drag-and-drop interfaces in React.",
-  "OpenWeather API": "Real-time weather data and forecast information service.",
-  "D3.js": "A library for producing dynamic, interactive data visualizations in browsers."
+  "React": "Expertise in building complex, stateful single-page applications.",
+  "TypeScript": "Leveraging static typing for mission-critical software reliability.",
+  "Three.js": "Engineering immersive 3D graphics for the modern web.",
+  "AI APIs": "Integrating LLMs and generative models into user-facing products.",
+  "Tailwind": "Implementing pixel-perfect, highly responsive design systems.",
+  "Node.js": "Building scalable, event-driven backend services.",
+  "TensorFlow.js": "Deploying machine learning models directly in the browser."
 };
 
 export const SKILLS: Skill[] = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Tailwind CSS", level: 98 },
-  { name: "Node.js", level: 85 },
-  { name: "State Management (Redux/Zustand)", level: 88 },
-  { name: "REST / GraphQL", level: 82 },
-  { name: "Git & CI/CD", level: 90 },
-  { name: "UI/UX Design Principles", level: 85 }
+  { name: "Full-Stack Development", level: 92 },
+  { name: "Web3D & Computer Graphics", level: 85 },
+  { name: "AI/ML Integration", level: 80 },
+  { name: "UI/UX Engineering", level: 95 },
+  { name: "Software Architecture", level: 88 },
+  { name: "Mobile App Development", level: 82 }
 ];
 
 export const EDUCATION: EducationItem[] = [
   {
-    institution: "University of Technology",
-    degree: "Bachelors in Computer Science",
-    period: "2019 - 2023",
-    description: "Focused on software engineering, web technologies, and data structures."
-  },
-  {
-    institution: "Web Academy",
-    degree: "Advanced Frontend Certification",
-    period: "2023 - 2024",
-    description: "Intensive training on modern React frameworks, performance optimization, and accessibility."
+    institution: "Ibadat International University Islamabad",
+    degree: "Bachelors in Software Engineering (BSSE)",
+    period: "2023 - 2027 (Currently 4th Semester)",
+    description: "Advancing core software engineering principles, algorithms, and data structures. Actively researching the intersection of AI and spatial computing."
   }
 ];
 
@@ -103,14 +82,14 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: "Sarah Johnson",
     company: "TechFlow Solutions",
-    content: "Touseef is an exceptional developer. He transformed our complex requirements into a seamless, high-performance web application. His attention to detail in UI/UX is truly world-class.",
+    content: "Touseef is an exceptional developer. He transformed our complex requirements into a seamless, high-performance web application.",
     avatar: "https://i.pravatar.cc/150?u=sarah"
   },
   {
     id: 2,
     name: "Michael Chen",
     company: "Visionary Apps",
-    content: "Working with Touseef was a breeze. He's not only technically proficient in React and TypeScript but also a great communicator who understands business goals perfectly.",
+    content: "His attention to detail in UI/UX and expertise in modern React frameworks is truly world-class.",
     avatar: "https://i.pravatar.cc/150?u=michael"
   },
   {
@@ -119,7 +98,21 @@ export const TESTIMONIALS: Testimonial[] = [
     company: "Creative Studio",
     content: "The level of professionalism Touseef brings to the table is outstanding. He delivered our project ahead of schedule and the code quality exceeded our expectations.",
     avatar: "https://i.pravatar.cc/150?u=elena"
-  }
+  },
+  {
+    id: 4,
+    name: "David Smith",
+    company: "InnoTech Systems",
+    content: "Touseef's ability to solve complex architectural problems is impressive. He significantly improved our application's performance and accessibility, resulting in much better user engagement.",
+    avatar: "https://i.pravatar.cc/150?u=david"
+  },
+  {
+    id: 5,
+    name: "Anjali Rao",
+    company: "Nexus Digital",
+    content: "A highly skilled developer with a deep understanding of modern frontend ecosystems. Touseef always goes the extra mile to ensure the product is polished and bug-free.",
+    avatar: "https://i.pravatar.cc/150?u=anjali"
+  },
 ];
 
 export const NAV_LINKS = [
@@ -128,6 +121,5 @@ export const NAV_LINKS = [
   { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Contact', href: '#contact' },
 ];
