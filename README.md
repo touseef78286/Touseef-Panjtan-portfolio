@@ -22,7 +22,7 @@ A premium, high-performance developer portfolio designed for a **Software Engine
 <<<<<<< HEAD
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/touseef78286/Touseef-Panjtan-portfolio.git(not available)
+   git clone https://github.com/touseef78286/Touseef-Panjtan-portfolio.git
    ```
 =======
 - **Frontend**: React, Next.js, Tailwind CSS, Framer Motion.
