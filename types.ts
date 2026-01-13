@@ -22,6 +22,19 @@ export interface EducationItem {
   description: string;
 }
 
+export interface ExperienceItem {
+  company: string;
+  position: string;
+  period: string;
+  description: string[];
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  date: string;
+}
+
 export interface Testimonial {
   id: number;
   name: string;
